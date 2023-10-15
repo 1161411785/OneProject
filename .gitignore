@@ -1,0 +1,12 @@
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/Bundles/
+/Assets/HybridCLRData/Generated/
+/Assets/HybridCLRBuildCache/
+/HybridCLRData/
+!/HybridCLRData/LocalIl2CppData-WindowsEditor
