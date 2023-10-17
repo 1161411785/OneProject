@@ -19,7 +19,6 @@ public class HelloOne : MonoBehaviour
     [ContextMenuItem("attack", "TestFun")]
     public int defense11;
 
-
     // Start is called before the first frame update
     void Start()
     {
@@ -29,11 +28,6 @@ public class HelloOne : MonoBehaviour
         TestFun();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     [ContextMenu("TestFun111")]
     public void TestFun()
