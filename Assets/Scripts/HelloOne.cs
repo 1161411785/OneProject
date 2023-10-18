@@ -1,48 +1,47 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 
+[RequireComponent(typeof(BoxCollider))]
+[ExecuteInEditMode]
 [SelectionBase]
+[Serializable]
 public class HelloOne : MonoBehaviour
 {
-    [Header("attack")]
-    public int attack;
 
-    [HideInInspector]
-
-    public int defense;
+    [Header("base info")]
+    public int field1;
 
     [Space]
-    public int space;
+    [Range(0, 100)]
+    public int field2;
 
-    [ContextMenuItem("attack", "TestFun")]
-    public int defense11;
+    [Tooltip("Description hahahahha")]
+    public int field3;
 
-    // Start is called before the first frame update
-    void Start()
+    [Multiline]
+    public string field4;
+
+    [TextArea]
+    public string field5;
+
+    [HideInInspector]
+    public int field6;
+
+    [SerializeField]
+    private int field7;
+
+    public int field8;
+
+    [ContextMenuItem("field9", "Fun1")]
+    public int field9;
+
+    [ContextMenu("Fun1")]
+    public void Fun1()
     {
-        attack = 0;
-        Debug.Log("hello world");
-        //TODO:ÐÞ¸Ä²ÎÊý
-        TestFun();
+        Debug.Log($"Fun1");
     }
 
-
-    [ContextMenu("TestFun111")]
-    public void TestFun()
-    {
-        print("TestFun");
-    }
-
-
-    [ContextMenuItem("Reset", "ResetBiography")]
-    [Multiline(8)]
-    public string playerBiography = "";
-
-    void ResetBiography()
-    {
-        Debug.Log(1111);
-        playerBiography = "";
-    }
 }
