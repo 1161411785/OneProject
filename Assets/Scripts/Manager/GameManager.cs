@@ -3,29 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class GameManager : MonoBehaviour
+public class GameManager : Singleton<GameManager>
 {
     public int intNum1;
     public int intNum2;
     public int intNum3;
 
-    private static GameManager instance;
-
-    public static GameManager Instance
+    protected override void Awake()
     {
-        get { return instance; }
-    }
-
-    private void Awake()
-    {
-        if (instance == null) 
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        base.Awake();
     }
 }

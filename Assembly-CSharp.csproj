@@ -61,6 +61,7 @@
     <Compile Include="Assets\Scripts\HelloOne.cs" />
     <Compile Include="Assets\Scripts\Tools\CameraController.cs" />
     <Compile Include="Assets\Scripts\Tools\Tools.cs" />
+    <Compile Include="Assets\Scripts\MyCustomAssembly.cs" />
     <Compile Include="Assets\Scripts\Manager\SOManager.cs" />
     <Compile Include="Assets\Scripts\Manager\GameManager.cs" />
     <Compile Include="Assets\Scripts\ScriptableObject\Data_SO.cs" />
@@ -69,6 +70,7 @@
   <ItemGroup>
     <None Include="Assets\AssetsPacks\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Extended.shader" />
     <None Include="Assets\AssetsPacks\BOXOPHOBIC\Skybox Cubemap Extended\Core\Shaders\Skybox Cubemap Blend.shader" />
+    <None Include="Assets\HotPro\HotBase\Shader\FX\LTY_shader_ALL3.0_URP.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

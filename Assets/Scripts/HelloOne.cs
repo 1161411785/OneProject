@@ -1,11 +1,9 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 
 [RequireComponent(typeof(BoxCollider))]
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 [SelectionBase]
 [Serializable]
 public class HelloOne : MonoBehaviour
@@ -42,6 +40,19 @@ public class HelloOne : MonoBehaviour
     public void Fun1()
     {
         Debug.Log($"Fun1");
+
+        Debug.Log(Vector3.Dot(new Vector3(15, 0, 20), new Vector3(1, 1, 1)));
+        Debug.Log(new Vector3(150, 15.3f, 20).magnitude);
+        Debug.Log(Time.deltaTime);
+    }
+
+
+    Vector3 transPos = Vector3.zero;
+    private void Update()
+    {
+        var targetPosition = new Vector3(10, 10, 10);
+        //transform.position = Vector3.Lerp(transform.position, targetPosition, 0.5f);
+        //transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, 5f);
     }
 
 }
