@@ -1,5 +1,11 @@
 using System;
+
+using Unity.VisualScripting;
+
+using UnityEditor.VersionControl;
+
 using UnityEngine;
+using UnityEngine.ProBuilder.Shapes;
 
 
 [RequireComponent(typeof(BoxCollider))]
@@ -47,12 +53,48 @@ public class HelloOne : MonoBehaviour
     }
 
 
+    private void Start()
+    {
+        Fun1();
+        Application.targetFrameRate = -1;
+        //Debug.Log(Application.targetFrameRate);
+
+    }
+
     Vector3 transPos = Vector3.zero;
     private void Update()
     {
+        //Debug.Log($"Update :{ Application.targetFrameRate}");
         var targetPosition = new Vector3(10, 10, 10);
         //transform.position = Vector3.Lerp(transform.position, targetPosition, 0.5f);
         //transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref velocity, 5f);
+        Debug.Log($"num:{Time.time}");
     }
 
+    int num = 0;
+    private void FixedUpdate()
+    {
+        //Debug.Log($"Application.targetFrameRate{Time.deltaTime} num:{Time.time }");
+    }
+
+    private void OnDisable()
+    {
+        
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        Debug.Log($"OnApplicationPause pause: {pause}");
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        Debug.Log($"OnApplicationFocus focus: {focus}");
+    }
+
+    private void OnApplicationQuit()
+    {
+        Debug.Log($"OnApplicationQuit");
+    }
 }
+

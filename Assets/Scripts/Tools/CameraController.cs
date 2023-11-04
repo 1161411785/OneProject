@@ -1,4 +1,6 @@
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 namespace GuaiShiLing
 {
@@ -13,6 +15,10 @@ namespace GuaiShiLing
         private void Start()
         {
             rotation = transform.rotation.eulerAngles;
+        }
+
+        private void FixedUpdate() {
+            
         }
 
         void Update()
@@ -76,6 +82,7 @@ namespace GuaiShiLing
 
             // 根据输入方向和速度来上升和下降相机
             transform.Translate(elevateDirection * verticalSpeed * Time.deltaTime);
+            
         }
     }
 }

@@ -8,6 +8,29 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"last_search.E8DA15E5" = "Accelerometer Frequency"
+	"OpenInspectorPreview.E8DA15E5" = "0"
+	"currentGroup.E8DA15E5" = "all"
+	"last_search.487F2B2C" = "api:"
+	"OpenInspectorPreview.487F2B2C" = "0"
+	"currentGroup.487F2B2C" = "asset"
+	"last_search.B608612A" = ""
+	"OpenInspectorPreview.B608612A" = "0"
+	"currentGroup.B608612A" = "all"
+	"picker_window_position_offset.768FEAAC" = "811.2;-386.4;581.6;550.4"
+	"picker_search_text.768FEAAC" = ""
+	"last_search.768FEAAC" = ""
+	"OpenInspectorPreview.768FEAAC" = "0"
+	"currentGroup.768FEAAC" = "all"
+	"last_search.D379D912" = ""
+	"OpenInspectorPreview.D379D912" = "0"
+	"currentGroup.D379D912" = "all"
+	"last_search.388C2F70" = ""
+	"OpenInspectorPreview.388C2F70" = "0"
+	"currentGroup.388C2F70" = "all"
+	"last_search.687F2B2C" = "撒打发士大夫"
+	"OpenInspectorPreview.687F2B2C" = "0"
+	"currentGroup.687F2B2C" = "all"
 }
 providers = {
 	packages = {
@@ -16,7 +39,7 @@ providers = {
 		defaultAction = null
 	}
 	adb = {
-		active = false
+		active = true
 		priority = 2500
 		defaultAction = null
 	}
@@ -31,17 +54,17 @@ providers = {
 		defaultAction = null
 	}
 	log = {
-		active = false
+		active = true
 		priority = 210
 		defaultAction = null
 	}
 	profilermarkers = {
-		active = false
+		active = true
 		priority = 100
 		defaultAction = null
 	}
 	performance = {
-		active = false
+		active = true
 		priority = 100
 		defaultAction = null
 	}
@@ -55,10 +78,35 @@ providers = {
 		priority = 50
 		defaultAction = null
 	}
+	menu = {
+		active = true
+		priority = 80
+		defaultAction = null
+	}
+	settings = {
+		active = true
+		priority = 100
+		defaultAction = null
+	}
+	calculator = {
+		active = true
+		priority = 10
+		defaultAction = null
+	}
+	static_methods = {
+		active = true
+		priority = 85
+		defaultAction = null
+	}
 }
 objectSelectors = {
 }
 recentSearches = [
+	"do"
+	"dogasset"
+	"撒打发士大夫"
+	"api:"
+	"Accelerometer Frequency"
 ]
 searchItemFavorites = [
 ]
